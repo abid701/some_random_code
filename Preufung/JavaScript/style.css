@@ -1,0 +1,87 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 18px;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 5px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+#info {
+    color: #006400;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#note,
+#bewertung {
+    font-size: 40px;
+    color: #000;
+}
+
+#fehler {
+    color: #ff0000;
+    display: none;
+}
+
+#Haupttitel {
+    text-align: center;
+}
+
+.aufgabe {
+    margin-top: 40px;
+}
+
+.aufgabe>span {
+    margin: 20px 0 5px 0;
+    color: #ff0000;
+}
+
+button {
+    padding: 15px 25px;
+    min-width: 240px;
+    background-color: #ff4400;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .3s ease;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(.95, .95);
+}
+
+input {
+    padding: 10px;
+    min-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+#hinweise {
+    margin-top: 200px;
+}
+
+table {
+    min-width: 90%;
+}
+
+td {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.rot {
+    color: red;
+}

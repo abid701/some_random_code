@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Josifin Sans";
+    src: url(inge.ttf) format("truetype");
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0%;
+}
+
+h3 {
+    margin-left: 120px;
+    color: gold;
+    text-shadow: 2px 1px 2px black;
+}
+
+h4 {
+    padding-left: 120px;
+    padding-top: 20px;
+    color: gold;
+}
+
+#top {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 100px;
+}
+
+#log_in {
+    margin-left: 100px;
+}
+
+#bild {
+    margin: 0 100px;
+}
+
+
+img {
+    width: 100%;
+}
+
+#bild img:hover {
+    opacity: 80%;
+    width: 95%;
+}
+
+table {
+    width: 84%;
+    margin: 0 120px;
+    border-style: 2px solid;
+    border-color: #33aadd;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #33aadd;
+    display: table;
+    box-sizing: border-box;
+}
+
+tr,
+td {
+    border: 2px solid #33aadd;
+    height: 40px;
+    padding-left: 10px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover {
+    color: #33aadd;
+}
+
+#footer p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#footer ul {
+    padding-left: 140px;
+}

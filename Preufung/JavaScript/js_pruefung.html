@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prüfung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+</head>
+
+<body id="main">
+    <div id="Haupttitel">
+        <img src="prufung.jpg" alt="Prufung Bild" id="titel" width="300px" height="90px">
+        <h1>JavaScript Aufgaben</h1>
+        <h2>Löse die Aufgaben mit JavaScript / JQuery</h2>
+    </div>
+
+    <!-- Aufgabe1 Durchschnitt -->
+    <section>
+        <h3 class="aufgabe"><span>Aufgabe1: </span>
+        </h3>
+        <input type="number" id="note1" placeholder="Note1 AE">
+        <input type="number" id="note2" placeholder="Note2 SI">
+        <input type="number" id="note3" placeholder="Note3 DB">
+        <input type="number" id="note4" placeholder="Note4 WEB">
+        <button id="btn1">Durchschnitt</button>
+
+        <div>
+            <span id="info">Teilnehmer / Teilnehmerin hat den Kurs mit den Punkten als Durchschnitt absolviert:
+                <strong id="note"></strong><br>
+            </span>
+
+            <span id="fehler"> Eine Note oder mehrer sind nicht zwischen 0 und 100. </span>
+        </div>
+    </section>
+
+    <!-- Aufgabe2 Bewertung -->
+    <section>
+        <h3 class="aufgabe"><span>Aufgabe2: </span></h3>
+        <button id="btn2">Bewertung</button>
+
+        <div>
+            <span id="info">Die Bewertung ist:
+                <strong id="bewertung"></strong>
+            </span>
+        </div>
+    </section>
+
+    <!-- Aufgabe3 Bild Zeigen -->
+    <section>
+        <h3 class="aufgabe"><span>Aufgabe3:</span></h3>
+        <button id="btn3">Bild Zeigen</button>
+        <div id="output"></div>
+    </section>
+
+
+    <!-- Aufgaben Hinweise -->
+    <div id="hinweise">
+        <h2>Die Aufgaben</h2>
+        <p class="aufgabe">
+            <span>Aufgabe 1: </span>Wenn den button (Durchschnitt) geklick wird, wird der Durchschnitt von Note1 bis
+            Note4 kalkuliert und im Element mit id #note geschrieben. <br>
+            Es muss erst gecheckt ob <strong>Note1, Note2, Note3 <span class="rot">ODER </span> Note4
+                <span class="rot">NICHT </span> kleiner 0 oder größer 100 </strong> sind. Es wird den Fehler in der id
+            #fehler eingeblendet (display block) sondern ausgeblendet (display none).
+        </p>
+
+        <p class="aufgabe">
+            <span>Aufgabe 2: </span>Wenn den button (Bewertung) geklick wird, wird den Durchschnitt bewertet. <br>
+            Die Bewertung wird im #bewertung Element geschrieben. ("Befriedigend", "Gut", "Sehr gut") <br>
+            nach den folgenden Werten:
+        </p>
+        <table>
+            <tr>
+                <th>Durchschnitt</th>
+                <th></th>
+                <th></th>
+                <th>Bewertung</th>
+            </tr>
+            <tr>
+                <td>gleich oder kleiner 80 </td>
+                <td>Durchschnitt <= 80</td>
+                <td>=></td>
+                <td>"Befriedigend"</td>
+            </tr>
+            <tr>
+                <td>größer 80 und gleich oder kleiner 91</td>
+                <td>Durchschnitt > 80 und Durchschnitt <=&nbsp; 91</td>
+                <td>=></td>
+                <td>"Gut"</td>
+            </tr>
+            <tr>
+                <td>größer 91</td>
+                <td>Durchschnitt > 91</td>
+                <td>=></td>
+                <td>"Sehr gut"</td>
+            </tr>
+        </table>
+
+        <p class="aufgabe">
+            <span>Aufgabe3</span> Das Bild (viel_erfolg.jpg) im Div output zeigen (Mit JS) (width 500px).
+        </p>
+    </div>
+
+    <script src="myCode.js"></script>
+
+
+</body>
+
+</html>

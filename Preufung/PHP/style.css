@@ -1,0 +1,38 @@
+body {
+    padding: 10px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid gold;
+    text-align: center;
+    padding: 5px;
+}
+
+input:not([type="submit"]) {
+    min-width: 300px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 2px solid gold;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: gold;
+    cursor: pointer;
+}
+
+label {
+    min-width: 200px;
+    display: inline-block;
+}
+
+div {
+    margin-top: 20px;
+}

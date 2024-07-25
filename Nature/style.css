@@ -1,0 +1,13 @@
+body {
+    background-image: url(nature.png);
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    padding-bottom: 3%;
+}
+
+p {
+    color: white;
+}
