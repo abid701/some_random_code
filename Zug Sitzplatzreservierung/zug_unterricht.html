@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ClassName TagName</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Zug Sitzplatzreservierung </h1>
+    <div id="zug">
+        <div class="row">
+            <div class="platz">1</div>
+            <div class="platz">5</div>
+            <div class="platz">9</div>
+            <div class="platz">13</div>
+            <div class="platz">17</div>
+            <div class="platz">21</div>
+            <div class="platz">25</div>
+            <div class="platz">29</div>
+            <div class="platz">33</div>
+            <div class="platz">37</div>
+        </div>
+        <div class="row">
+            <div class="platz">2</div>
+            <div class="platz">6</div>
+            <div class="platz">10</div>
+            <div class="platz">14</div>
+            <div class="platz">18</div>
+            <div class="platz">22</div>
+            <div class="platz">26</div>
+            <div class="platz">30</div>
+            <div class="platz">34</div>
+            <div class="platz">38</div>
+        </div>
+        <div class="gang"></div>
+        <div class="row">
+            <div class="platz">3</div>
+            <div class="platz">7</div>
+            <div class="platz">11</div>
+            <div class="platz">15</div>
+            <div class="platz">19</div>
+            <div class="platz">23</div>
+            <div class="platz">27</div>
+            <div class="platz">31</div>
+            <div class="platz">35</div>
+            <div class="platz">39</div>
+        </div>
+        <div class="row">
+            <div class="platz">4</div>
+            <div class="platz">8</div>
+            <div class="platz">12</div>
+            <div class="platz">16</div>
+            <div class="platz">20</div>
+            <div class="platz">24</div>
+            <div class="platz">28</div>
+            <div class="platz">32</div>
+            <div class="platz">36</div>
+            <div class="platz">40</div>
+        </div>
+    </div>
+
+    <div id="controll">
+        <button id="confirm">Bestätigen</button>
+        <button id="cancel">Abbrechen</button>
+    </div>
+</body>
+
+<script>
+    const platze = document.getElementsByClassName("platz");
+
+    for (var i = 0; i < platze.length; i++) {
+        platze[i].addEventListener('click', addToReserve);
+    }
+
+    function addToReserve() {
+        // this.style.backgroundColor = "lightgreen";
+        if (this.classList.contains("reserve")) {
+            this.classList.remove("reserve");
+        } else {
+            this.classList.add("reserve");
+        }
+
+    }
+
+    const confirming = document.getElementById("confirm");
+    confirming.addEventListener("click", reserved);
+
+    function reserved() {
+        const reservedPlatze = document.querySelectorAll(".reserve");
+        for (var i = 0; i < reservedPlatze.length; i++) {
+            reservedPlatze[i].classList.add("confirmed");
+            reservedPlatze[i].classList.remove("reserve");
+        }
+    }
+
+    const cancel = document.getElementById("cancel");
+
+    cancel.addEventListener("click", canceled);
+
+    function canceled() {
+        const reservedPlatze = document.querySelectorAll(".reserve");
+        for (var i = 0; i < reservedPlatze.length; i++) {
+            reservedPlatze[i].classList.remove("reserve");
+        }
+    }
+
+
+
+
+</script>
+
+</html>

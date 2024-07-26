@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        body {
+            padding: 50px;
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        input {
+            min-width: 180px;
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+        }
+
+        button {
+            border: none;
+            background-color: gold;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eine Zahl erraten</h1>
+    <div>
+        <p>Gebe eine Zahl zwischen 1 und 10 ein. Du hast 3 Versuche:</p>
+        <input type="number" min="1" max="10" id="eingabeInput">
+        <button id="eingabeBnt">Eingabe bestätigen</button>
+        <div id="output"></div>
+        <span id="error"></span>
+    </div>
+    <script src="programs.js"></script>
+</body>
+
+</html>

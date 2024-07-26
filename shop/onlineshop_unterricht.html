@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3cb4cdadc0.js" crossorigin="anonymous"></script>
+    <script src="jquery.min.js"></script>
+    <title>Webseite</title>
+</head>
+
+<body>
+    <!-- Suche Berecih -->
+    <header>
+        <div id="suchen">
+            <div id="such-box">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                <input type="text" name="search" id="search" placeholder="Suche">
+            </div>
+            <button id="filterBtn">Filter</button>
+        </div>
+
+    </header>
+
+    <!-- Hauptseite -->
+    <div id="main">
+        <!-- Titel -->
+        <h1>Möbel</h1>
+
+        <!-- Produkte -->
+        <div class="product tisch">
+            <h2>Tisch</h2>
+            <img src="imgs/tisch.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+
+        <div class="product sofa">
+            <h2>Sofa2</h2>
+            <img src="imgs/sofa2.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+
+        <div class="product schrank">
+            <h2>Schrank2</h2>
+            <img src="imgs/schrank1.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <div class="product sofa">
+            <h2>Sofa1</h2>
+            <img src="imgs/sofa.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <div class="product stuhl">
+            <h2>Stuhl2</h2>
+            <img src="imgs/stuhl2.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+
+        <div class="product stuhl">
+            <h2>Stuhl1</h2>
+            <img src="imgs/stuhl.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <div class="product schrank">
+            <h2>Schrank1</h2>
+            <img src="imgs/schrank.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <div class="product tisch">
+            <h2>Tisch2</h2>
+            <img src="imgs/tisch2.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <div class="product stuhl">
+            <h2>Stuhl3</h2>
+            <img src="imgs/stuhl3.png" alt="">
+            <a href="#">zum Produkt..</a>
+        </div>
+        <!-- Wenn keine Produkte ausgewählt sind -->
+        <div id="fehler">Für deine Suche gibt es keine Produkte!</div>
+    </div>
+
+    <!-- JS Code  -->
+    <script>
+        $(document).ready(function () {
+            /* $('#search').on('keyup', function () {
+                var our_search = $(this).val().toLowerCase();
+                var alleProdukte = false;
+
+                $('.product').each(function () {
+                    //var productText = $(this).text().toLowerCase();
+                    var productText = $(this).attr('class').toLowerCase();
+                    if (productText.includes(our_search)) {
+                        $(this).show();
+                        alleProdukte = true;
+                    } else {
+                        $(this).hide();
+                    }
+                });
+
+                if (!alleProdukte) {
+                    $('#fehler').show();
+                } else {
+                    $('#fehler').hide();
+                }
+            }); */
+
+            /* $('#filterBtn').on('click', function () {
+                 $('.product').css('display', 'none');
+                 if ($('#search').val() === '') {
+                     $('.product').css('display', 'inline-block');
+                 }
+                 if ($('#search').val() === 'tisch') {
+                     $('.tisch').css('display', 'inline-block');
+                 }
+                 if ($('#search').val() === 'schrank') {
+                     $('.schrank').css('display', 'inline-block');
+                 }
+                 if ($('#search').val() === 'stuhl') {
+                     $('.stuhl').css('display', 'inline-block');
+                 }
+                 else {
+                     $('#fehler').css('display', 'block');
+                 }
+             }); */
+
+            $('#search').on('keyup', function () {
+                var our_search = $('#search').val().toLowerCase();
+                var counter = 0;
+                $('.product').hide();
+                $('.product').each(function () {
+                    console.log("it works!")
+                    if ($(this).text().toLowerCase().includes(our_search)) {
+                        console.log("if works")
+                        $(this).show();
+                        $('#fehler').hide();
+                        counter++;
+                    }
+
+                    if (counter === 0) {
+                        $('#fehler').show();
+                    }
+
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

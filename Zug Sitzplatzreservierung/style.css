@@ -1,0 +1,65 @@
+#zug {
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #8b0000;
+    border-radius: 20px;
+    padding: 15px 20px 15px 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    margin: 10px 0;
+}
+
+.row div {
+    border: 1px solid #00008b;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+.platz {
+    cursor: pointer;
+}
+
+.gang {
+    height: 30px;
+}
+
+.reserve {
+    background-color: #adff2f !important;
+}
+
+.confirmed {
+    background-color: #ee0505;
+}
+
+#controll {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#controll button {
+    padding: 10px 40px;
+    background-color: #602222;
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #602222;
+    outline: none;
+    margin: 5px;
+    box-shadow: 4px 8px 12px #000;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all .4s ease;
+
+}
+
+#controll button:hover {
+    background-color: white;
+    color: #602222;
+}
