@@ -32,3 +32,8 @@ Zahl Spiel
 Prüfung
 
     In diesem Ordner sind die Codes, die ich für die Prüfung geschrieben habe.
+
+Projekt, an dem ich gerade arbeite (AmoHotel.com)
+
+    Ich arbeite gerade an diesem Projekt. Es handelt sich um eine Geschäftsanwendung für eine Hotelrezeption. 
+    Ich erstelle sie mit Spring Boot. Es liegt in einem anderen Repository
