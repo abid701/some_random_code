@@ -1,7 +1,7 @@
 Alien Invasion
 
     Alien Invasion ist ein Spiel, das ich aus dem Buch "Python Crash Course" von Eric Matthes 
-    gelernt habe zu bauen. Es ist zur Hälfte fertiggestellt.
+    gelernt habe zu bauen.
 
 Alterrechner
 
