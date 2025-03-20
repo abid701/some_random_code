@@ -1,8 +1,3 @@
-Alien Invasion
-
-    Alien Invasion ist ein Spiel, das ich aus dem Buch "Python Crash Course" von Eric Matthes 
-    gelernt habe zu bauen.
-
 Alterrechner
 
     Der Alterrechner sagt dir, wie alt du bist, wenn du dein Geburtsdatum eingibst. Er 
@@ -32,8 +27,3 @@ Zahl Spiel
 Prüfung
 
     In diesem Ordner sind die Codes, die ich für die Prüfung geschrieben habe.
-
-Projekt, an dem ich gerade arbeite (AmoHotel.com)
-
-    Ich arbeite gerade an diesem Projekt. Es handelt sich um eine Geschäftsanwendung für eine Hotelrezeption. 
-    Ich erstelle sie mit Spring Boot. Es liegt in einem anderen Repository
